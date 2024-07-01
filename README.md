@@ -1,4 +1,4 @@
 # Olaoluwa-Paul
 
 
-click to visit website:http://olaoluwapaul.com/
+click to visit website:http://sheyyoudeywhine.blogspot.com/
