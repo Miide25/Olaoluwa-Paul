@@ -6,20 +6,22 @@
 }
 
 body{
-    background-color: black;
-     
-   
+    background-color: whitesoke;
+    width: 50%;   
 }
 
 *{
   padding: 0;
   margin: 0;
   font-family: sans-serif;
+  width: 50%;
+
 }
 
 .container span{
   text-transform: uppercase;
   display: block;
+  width: 50%;
 }
 
 
@@ -34,17 +36,17 @@ body{
 }
 
 .text2{
-  color: blue;
+  color: burlywood;
   font-size: 50px; 
   font-weight: 700;
   margin-bottom: 30px;
+  width: 50%;
 }
 .container h1{
-  color:blue;
+  color:burlywood;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 2px;
-
 }
 
 @keyframes text {
@@ -77,27 +79,30 @@ body{
   margin-left: 55%;
   margin-top: -0%;
   font-size: 30px;
-  color: blue;
+  color: burlywood;
 }
 ol {
     font-size: 25px;
     padding: 0 5%;
     margin-top: -25%;
     color: skyblue;
+    width: 50%;
 }
 
 ul {
     padding: 0 3%;
     margin-top: 2%;
     justify-content: space-between;
+    width: 50%;
 }
 
 
 .finish h2 {
     font-size: 30px;
     justify-self: flex-start;
-    color: black;
+    color: skyblue;
     margin-bottom: 1%;
+    width: 50%;
 }
 
 .finish p {
@@ -105,10 +110,12 @@ ul {
     font-style: oblique;
     padding: 0 2%;
     justify-content: space-between;
-    color: blue;
+    color: skyblue;
+    width: 50%;
 }
 
 .wrapper .btn {
+    width: 50%;
    cursor: pointer;
    display: block;
   width: 15%;
@@ -140,7 +147,7 @@ ul {
     font-style: italic;
     text-transform: capitalize;
     cursor: pointer;
-    background-color: blue;
+    background-color: skyblue;
     
   }
 
