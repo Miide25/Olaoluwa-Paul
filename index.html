@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Journey to Becoming a Web Development Expert</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+  <header data-testid="header">
+    <img src="IMG-20230814-WA0005.jpg" alt="profile picture of olaoluwa paul" data-testid="slackprofilepicture" class="header-image">
+    <h1 data-testid="slackDisplayedName">Olaoluwa Paul<h1>
+    <h2 data-testid="slackEmail">olaoluwapaul38@gmail.com</h2>
+  </header>
+  <section id="intro">
+    <div class="container">
+      <h1>My Journey to Becoming a Web Development Expert</h1>
+      <p>My journey to becoming a web development expert involves mastering HTML, CSS, and JavaScript, leveraging the HNG internship to gain real-world experience, and continuously contributing to open-source projects.</p>
+    </div>
+  </section>
+  <main>
+    <div class="container-goal">
+    <div class="two-year-goals">
+      <div>
+      <h3>My Goals for the Next Two Years</h3>
+      <h4>Year One Goals</h4>
+      <ul>
+        <li>
+          <h5> Expand HTML Knowledge and Accessibility Best Practices:</h5>
+          <p>Study semantic HTML and accessibility best practices.</p>
+          <p>Ensure all projects are accessible and follow these standards.</p>
+        </li>
+        <li>
+          <h5>Master Advanced JavaScript and Modern CSS Techniques:</h5>
+          <p>Complete advanced JavaScript courses and learn CSS Grid, Flexbox, and animations.</p>
+          <p>Build projects to apply these skills and solidify my frontend development foundation.</p>
+        </li>
+        <li>
+          <h5>Build and Deploy Complex ReactJS Projects:</h5>
+          <p>Create and launch scalable ReactJS applications, focusing on performance optimization and best practices, demonstrating my expertise in real-world scenarios.</p>
+        </li>
+      </ul>
+      </div>
+      <div>
+      <h5>Year Two Goals</h5>
+      <ul>
+        <li>
+          <h5> Learn Advanced Front-End Frameworks:</h5>
+          <p>Gain proficiency in additional front-end frameworks like Vue.js or Svelte, building projects to apply these skills and broaden my expertise.</p>
+        </li>
+        <li>
+          <h5>Develop Full-Stack Skills:</h5>
+          <p>Learn Node.js and Express to complement my front-end skills.</p>
+          <p>Build full-stack applications to understand end-to-end web development.</p>
+        </li>
+        <li>
+          <h5>Contribute to Open Source and Tech Community:</h5>
+          <p>Actively participate in open-source projects</p>
+          <p>contribute to the tech community through blog posts, tutorials, or mentoring, enhancing my collaborative and coding skills.</p>
+        </li>
+      </ul>
+     </div>
+    </div>
+      <section data-testid="linksSection">
+      <h2>Useful Resources</h2>
+      <ul>
+        <li><a href="http://hng.tech/learn" data-testid="hngLink">HNG Learn</a></li>
+        <li><a href="http://keyword.dog" data-testid="keywordLink">Keyword Dog</a></li>
+        <li><a href="http://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer data-testid="footer">
+    <p>Current Time in UTC: <span data-testid="currentTimeUTC"></span></p>
+    <p>Current Day of the Week: <span data-testid="currentDay"></span></p>
+    <p>Current Date: <span data-testid="currentDate"></span></p>
+  </footer>
+  <script>
+    const currentTimeUTC = document.querySelector('[data-testid="currentTimeUTC"]');
+    const currentDay = document.querySelector('[data-testid="currentDay"]');
+    const currentDate = document.querySelector('[data-testid="currentDate"]');
+    
+    setInterval(() => {
+      const now = new Date();
+      currentTimeUTC.textContent = now.toUTCString();
+      currentDay.textContent = now.toLocaleDateString('en-US', { weekday: 'long' });
+      currentDate.textContent = now.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+    }, 1000); 
+  </script>
+</body>
+</html>
